@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Responsive Portfolio with CSS Grid and Flexbox | Yasser's Blog</title>
+    <meta name="description" content="Learn how to create a modern, responsive portfolio website using CSS Grid and Flexbox.">
+    <meta name="keywords" content="CSS Grid, Flexbox, responsive design, portfolio, web development">
+    <meta name="author" content="Yasser">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Yasser</a>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../projects/index.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container blog-container">
+            <article class="post-content">
+                <header class="post-header">
+                    <h1 class="post-title-single">Building a Responsive Portfolio with CSS Grid and Flexbox</h1>
+                    <div class="post-meta-single">
+                        <span><i class="far fa-calendar"></i> October 15, 2023</span>
+                        <span><i class="far fa-clock"></i> <span id="readingTime">5 min read</span></span>
+                        <span><i class="far fa-folder"></i> Web Development</span>
+                        <span><i class="far fa-tags"></i> CSS, Responsive Design, Layout</span>
+                    </div>
+                </header>
+                
+                <p>Creating a responsive portfolio website is essential for showcasing your work as a developer. With CSS Grid and Flexbox, you can build layouts that adapt beautifully to all screen sizes. In this tutorial, I'll walk you through the process of building a modern portfolio using these powerful CSS tools.</p>
+                
+                <h2>Why CSS Grid and Flexbox?</h2>
+                
+                <p>Before we dive into code, let's understand why these tools are so powerful:</p>
+                
+                <ul>
+                    <li><strong>CSS Grid</strong> is perfect for two-dimensional layouts (rows and columns)</li>
+                    <li><strong>Flexbox</strong> excels at one-dimensional layouts (either rows OR columns)</li>
+                    <li>Both are fully responsive and work well together</li>
+                    <li>They reduce the need for complex float-based layouts</li>
+                </ul>
+                
+                <h2>Setting Up the Basic Structure</h2>
+                
+                <p>Let's start with the HTML structure for our portfolio:</p>
+                
+                <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header class="header"&gt;
+        &lt;nav class="nav"&gt;
+            &lt;!-- Navigation content --&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main class="main-content"&gt;
+        &lt;section class="hero"&gt;
+            &lt;!-- Hero section --&gt;
+        &lt;/section&gt;
+        
+        &lt;section class="projects"&gt;
+            &lt;!-- Projects grid --&gt;
+        &lt;/section&gt;
+        
+        &lt;section class="skills"&gt;
+            &lt;!-- Skills section --&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    
+    &lt;footer class="footer"&gt;
+        &lt;!-- Footer content --&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                
+                <h2>Creating the Hero Section with Flexbox</h2>
+                
+                <p>The hero section typically contains your introduction and a call-to-action. Here's how to create it with Flexbox:</p>
+                
+                <pre><code class="language-css">.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+    
+    .hero-content {
+        flex: 1;
+        max-width: 50%;
+    }
+    
+    .hero-image {
+        flex: 1;
+        max-width: 50%;
+    }
+}</code></pre>
+                
+                <h2>Building the Projects Grid with CSS Grid</h2>
+                
+                <p>For the projects section, CSS Grid is the perfect choice:</p>
+                
+                <pre><code class="language-css">.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+@media (min-width: 640px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}</code></pre>
+                
+                <h2>Combining Grid and Flexbox for Complex Layouts</h2>
+                
+                <p>Sometimes you need both Grid and Flexbox. Here's an example of a skills section that uses both:</p>
+                
+                <pre><code class="language-css">.skills-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .skills-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 8px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    padding: 0.25rem 0.75rem;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}</code></pre>
+                
+                <h2>Responsive Navigation with Flexbox</h2>
+                
+                <p>A responsive navigation menu is crucial. Here's how to create one with Flexbox:</p>
+                
+                <pre><code class="language-css">.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--nav-bg);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: var(--nav-bg);
+        padding: 1rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}</code></pre>
+                
+                <h2>Conclusion</h2>
+                
+                <p>CSS Grid and Flexbox are powerful tools that make responsive design much easier. By combining them effectively, you can create complex layouts that work perfectly on all devices. Remember to:</p>
+                
+                <ol>
+                    <li>Use Flexbox for one-dimensional layouts (navigation, hero sections)</li>
+                    <li>Use CSS Grid for two-dimensional layouts (project grids, card layouts)</li>
+                    <li>Combine both for complex components</li>
+                    <li>Always test your layouts on multiple screen sizes</li>
+                </ol>
+                
+                <p>With practice, you'll be able to create beautiful, responsive portfolios that showcase your work effectively. Happy coding!</p>
+                
+                <div class="post-footer">
+                    <a href="index.html" class="back-to-blog">
+                        <i class="fas fa-arrow-left"></i> Back to Blog
+                    </a>
+                </div>
+                
+                <!-- Comments section (optional) -->
+                <!-- <div id="comments"></div> -->
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Yasser</div>
+                <p class="footer-tagline">Building the web, one line of code at a time.</p>
+                <nav class="footer-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="../projects/index.html">Projects</a>
+                    <a href="index.html">Blog</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#contact">Contact</a>
+                </nav>
+                <p class="footer-copyright">&copy; 2023 Yasser. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

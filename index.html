@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasser | Developer Portfolio</title>
+    <meta name="description" content="Full Stack Developer portfolio with projects, blog, and contact information.">
+    <meta name="keywords" content="developer, portfolio, web development, programming, projects">
+    <meta name="author" content="Yasser">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Yasser</a>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="projects/index.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="blog/index.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Hi, I'm <span class="highlight">Yasser</span></h1>
+                        <h2 class="hero-subtitle">Full Stack Developer & Problem Solver</h2>
+                        <p class="hero-description">I build efficient, scalable web applications with clean code and intuitive user interfaces. Passionate about open source and learning new technologies.</p>
+                        <div class="hero-buttons">
+                            <a href="projects/index.html" class="btn btn-primary">View Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="code-window">
+                            <div class="code-header">
+                                <span class="code-dot red"></span>
+                                <span class="code-dot yellow"></span>
+                                <span class="code-dot green"></span>
+                                <span class="code-title">profile.js</span>
+                            </div>
+                            <div class="code-body">
+                                <pre><code class="language-javascript">const developer = {
+  name: "Yasser",
+  role: "Full Stack Developer",
+  skills: ["JavaScript", "React", "Node.js", 
+           "Python", "HTML/CSS", "MongoDB"],
+  location: "Remote",
+  available: true,
+  passions: [
+    "Clean code",
+    "Problem solving",
+    "Open source",
+    "UI/UX design"
+  ]
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-title"><i class="fas fa-code"></i> Frontend</h3>
+                        <ul class="skill-list">
+                            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                            <li>React, Vue.js, TypeScript</li>
+                            <li>Responsive Design, CSS Frameworks</li>
+                            <li>Web Performance Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-title"><i class="fas fa-server"></i> Backend</h3>
+                        <ul class="skill-list">
+                            <li>Node.js, Express, Python, Django</li>
+                            <li>REST APIs, GraphQL, Authentication</li>
+                            <li>MySQL, MongoDB, PostgreSQL</li>
+                            <li>Docker, CI/CD, AWS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-title"><i class="fas fa-tools"></i> Tools & Methods</h3>
+                        <ul class="skill-list">
+                            <li>Git, GitHub, GitLab</li>
+                            <li>Agile/Scrum, TDD, DevOps</li>
+                            <li>Figma, Adobe XD</li>
+                            <li>VS Code, Webpack, ESLint</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <p class="project-description">Full-featured e-commerce solution with user authentication, payment integration, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/project1/index.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/username/ecommerce" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Task Management App</h3>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <p class="project-description">Collaborative task management tool with real-time updates, drag & drop, and team workspace functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">SCSS</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/project2/index.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/username/taskapp" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <span class="project-date">2022</span>
+                        </div>
+                        <p class="project-description">Responsive weather application with 5-day forecast, location search, and interactive maps.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/project3/index.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/username/weather" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="projects/index.html" class="btn btn-secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate full-stack developer with 5+ years of experience building web applications and solving complex problems with code. I enjoy creating efficient, user-friendly solutions that make a difference.</p>
+                        <p>My journey in tech started with a computer science degree and has evolved through various roles from frontend developer to full stack engineer. I'm constantly learning and keeping up with the latest industry trends.</p>
+                        <p>When I'm not coding, I contribute to open-source projects, write technical blog posts, and mentor aspiring developers. I believe in writing clean, maintainable code and following best practices.</p>
+                        
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                                <p>B.Sc. Computer Science - Tech University (2018)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-certificate"></i> Certifications</h4>
+                                <p>AWS Certified Developer, React Advanced Concepts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Let's work together</h3>
+                        <p>I'm always open to discussing new opportunities, interesting projects, or potential collaborations.</p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:hello@yasser.dev" class="contact-link">
+                                <i class="fas fa-envelope"></i> hello@yasser.dev
+                            </a>
+                            
+                            <div class="social-links">
+                                <a href="https://github.com/yasser" class="social-link" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/yasser" class="social-link" target="_blank" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://fiverr.com/yasser" class="social-link" target="_blank" aria-label="Fiverr">
+                                    <i class="fab fa-fonticons"></i>
+                                </a>
+                                <a href="https://upwork.com/freelancers/yasser" class="social-link" target="_blank" aria-label="Upwork">
+                                    <i class="fab fa-upwork"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Yasser</div>
+                <p class="footer-tagline">Building the web, one line of code at a time.</p>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="projects/index.html">Projects</a>
+                    <a href="blog/index.html">Blog</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <p class="footer-copyright">&copy; 2023 Yasser. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* blog.css */
+/* Blog specific styles */
+
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.post-list {
+    list-style: none;
+}
+
+.post-item {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.post-excerpt {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Single post styles */
+.post-header {
+    margin-bottom: 30px;
+}
+
+.post-content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.post-content h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.post-content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.post-content code {
+    background-color: var(--inline-code-bg);
+    color: var(--inline-code-color);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+}
+
+.post-content pre {
+    background-color: var(--code-bg);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 25px 0;
+    border: 1px solid var(--border-color);
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.post-content blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 20px;
+    margin: 25px 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.post-content ul, .post-content ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.post-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.back-to-blog {
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--accent-color);
+}
+
+.back-to-blog:hover {
+    text-decoration: underline;
+}

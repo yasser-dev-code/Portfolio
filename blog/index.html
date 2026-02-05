@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Yasser's Portfolio</title>
+    <meta name="description" content="Technical blog posts about web development, programming tips, and tutorials.">
+    <meta name="keywords" content="blog, web development, programming, tutorials, JavaScript, React">
+    <meta name="author" content="Yasser">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Yasser</a>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../projects/index.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container blog-container">
+            <section style="padding-top: 120px;">
+                <h1 class="section-title">Blog</h1>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 50px; color: var(--text-secondary);">
+                    Technical articles, tutorials, and thoughts on web development
+                </p>
+                
+                <div class="post-list">
+                    <!-- Blog Post 1 -->
+                    <article class="post-item">
+                        <h2 class="post-title">
+                            <a href="post1.html">Building a Responsive Portfolio with CSS Grid and Flexbox</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> October 15, 2023</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                            <span><i class="far fa-folder"></i> Web Development</span>
+                        </div>
+                        <p class="post-excerpt">Learn how to create a modern, responsive portfolio website using CSS Grid and Flexbox. This tutorial covers layout techniques, responsive design principles, and best practices for creating a portfolio that works on all devices.</p>
+                        <a href="post1.html" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                    
+                    <!-- Blog Post 2 -->
+                    <article class="post-item">
+                        <h2 class="post-title">
+                            <a href="post2.html">JavaScript ES6+ Features You Should Be Using</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> September 28, 2023</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                            <span><i class="far fa-folder"></i> JavaScript</span>
+                        </div>
+                        <p class="post-excerpt">Explore the most useful ES6+ features including arrow functions, destructuring, template literals, and async/await. Learn how these features can make your code cleaner, more readable, and more efficient.</p>
+                        <a href="post2.html" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                    
+                    <!-- Blog Post 3 -->
+                    <article class="post-item">
+                        <h2 class="post-title">
+                            <a href="post3.html">Optimizing Website Performance: A Practical Guide</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> August 12, 2023</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                            <span><i class="far fa-folder"></i> Performance</span>
+                        </div>
+                        <p class="post-excerpt">Discover practical techniques for optimizing website performance, including image optimization, code splitting, lazy loading, and caching strategies. Learn how to measure and improve your website's speed.</p>
+                        <a href="post3.html" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                    
+                    <!-- Blog Post 4 -->
+                    <article class="post-item">
+                        <h2 class="post-title">
+                            <a href="post4.html">Getting Started with React Hooks</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> July 5, 2023</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                            <span><i class="far fa-folder"></i> React</span>
+                        </div>
+                        <p class="post-excerpt">A comprehensive introduction to React Hooks. Learn how to use useState, useEffect, useContext, and custom hooks to build functional components with state and side effects.</p>
+                        <a href="post4.html" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                    
+                    <!-- Blog Post 5 -->
+                    <article class="post-item">
+                        <h2 class="post-title">
+                            <a href="post5.html">Mastering Git: Essential Commands and Workflows</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> June 18, 2023</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                            <span><i class="far fa-folder"></i> Git</span>
+                        </div>
+                        <p class="post-excerpt">Essential Git commands and workflows every developer should know. From basic commits to advanced branching strategies, this guide covers everything you need to work efficiently with Git.</p>
+                        <a href="post5.html" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="../index.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Yasser</div>
+                <p class="footer-tagline">Building the web, one line of code at a time.</p>
+                <nav class="footer-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="../projects/index.html">Projects</a>
+                    <a href="index.html">Blog</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#contact">Contact</a>
+                </nav>
+                <p class="footer-copyright">&copy; 2023 Yasser. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
