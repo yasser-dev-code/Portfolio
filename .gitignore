@@ -1,0 +1,14 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local development artifacts
+*.log
+screenshots/qa-*.png
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
