@@ -25,6 +25,7 @@ window.PORTFOLIO_TRANSLATIONS = {
     viewAllProjects: 'Voir tous mes dépôts GitHub', featured: 'Projet phare', githubButton: 'Voir sur GitHub', projectImageAlt: 'Aperçu du projet',
     backgroundKicker: 'Parcours', backgroundTitle: 'Une formation appliquée,<br>une curiosité continue.', education: 'Formation',
     degree: 'Licence Professionnelle en Développement Informatique', educationText: 'Formation orientée conception logicielle, développement d’applications et gestion des données, consolidée par des projets académiques concrets.',
+    webMobileTraining: 'Formation en Développement Web et Mobile', jobInTechLocation: 'JobInTech · Meknès, Maroc', webMobileTrainingText: "Formation pratique axée sur le développement d'applications web et mobiles, la programmation front-end et back-end, les bases de données et la réalisation de projets concrets.",
     practice: 'Pratique continue', personalProjects: 'Projets personnels full-stack', practiceText: 'Conception d’applications bilingues et sécurisées, de l’architecture des API et bases de données jusqu’aux interfaces responsives et aux tests.',
     contactKicker: 'Construisons la suite', contactTitle: 'Un poste, un projet,<br>une conversation ?', contactText: 'Je recherche une opportunité en développement full-stack où je pourrai mettre mes compétences au service d’une équipe ambitieuse.',
     connectLinkedIn: 'Échangeons sur LinkedIn', exploreCode: 'Explorez mon code', footerText: 'Conçu et développé avec soin.'
@@ -53,6 +54,7 @@ window.PORTFOLIO_TRANSLATIONS = {
     viewAllProjects: 'View all my GitHub repositories', featured: 'Featured project', githubButton: 'View on GitHub', projectImageAlt: 'Project preview',
     backgroundKicker: 'Background', backgroundTitle: 'Applied education,<br>continuous curiosity.', education: 'Education',
     degree: 'Professional Bachelor’s Degree in Software Development', educationText: 'Training focused on software design, application development, and data management, strengthened through practical academic projects.',
+    webMobileTraining: 'Web and Mobile Development Training', jobInTechLocation: 'JobInTech · Meknes, Morocco', webMobileTrainingText: 'Practical training focused on web and mobile application development, frontend and backend programming, databases, and hands-on projects.',
     practice: 'Continuous practice', personalProjects: 'Personal full-stack projects', practiceText: 'Building secure bilingual applications, from API and database architecture to responsive interfaces and testing.',
     contactKicker: 'Let’s build what’s next', contactTitle: 'A role, a project,<br>a conversation?', contactText: 'I am looking for a full-stack development opportunity where I can bring my skills to an ambitious team.',
     connectLinkedIn: 'Let’s connect on LinkedIn', exploreCode: 'Explore my code', footerText: 'Designed and developed with care.'
