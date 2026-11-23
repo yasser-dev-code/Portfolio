@@ -81,6 +81,13 @@
       const article = document.createElement('article');
       article.className = `project-card reveal${project.featured ? ' featured' : ''}`;
 
+      const cardLink = document.createElement('a');
+      cardLink.className = 'project-card-link';
+      cardLink.href = project.repo;
+      cardLink.target = '_blank';
+      cardLink.rel = 'noopener noreferrer';
+      cardLink.setAttribute('aria-label', `${dictionary.githubButton} — ${project.name}`);
+
       const media = document.createElement('div');
       media.className = project.image ? 'project-media' : 'project-placeholder';
       if (project.image) {
@@ -130,7 +137,7 @@
       link.setAttribute('aria-label', `${dictionary.githubButton} — ${project.name}`);
 
       body.append(title, description, tags, link);
-      article.append(media, body);
+      article.append(cardLink, media, body);
       projectGrid.append(article);
     });
 
