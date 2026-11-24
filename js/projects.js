@@ -48,12 +48,12 @@ window.PORTFOLIO_PROJECTS = [
   {
     name: 'Banque-En-Ligne',
     repo: 'https://github.com/yasser-dev-code/Banque-En-Ligne',
-    image: null,
+    image: 'assets/images/projects/banque-en-ligne.png',
     featured: false,
     tags: ['Java', 'Swing', 'MVC', 'OOP'],
     description: {
-      fr: 'Application bancaire desktop en Java Swing : comptes courant et épargne, virements internes et IBAN, historique, graphiques et relevés PDF.',
-      en: 'Java Swing desktop banking application with checking and savings accounts, internal and IBAN transfers, history, charts, and PDF statements.'
+      fr: 'Application bancaire desktop en Java Swing : comptes courant et épargne, virements internes et externes, historique sur 12 mois et relevés texte.',
+      en: 'Java Swing desktop banking application with checking and savings accounts, internal and external transfers, 12-month history, and text statements.'
     }
   }
 ];

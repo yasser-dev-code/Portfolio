@@ -183,7 +183,28 @@
   });
   themeButton.addEventListener('click', () => applyTheme(currentTheme === 'dark' ? 'light' : 'dark'));
   menuButton.addEventListener('click', () => toggleMenu());
-  document.querySelectorAll('.nav-link').forEach((link) => link.addEventListener('click', () => toggleMenu(false)));
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const hash = link.getAttribute('href');
+      if (!hash || hash === '#') return;
+
+      const target = document.querySelector(hash);
+      if (!target) return;
+
+      event.preventDefault();
+      toggleMenu(false);
+
+      requestAnimationFrame(() => {
+        const headerOffset = header.getBoundingClientRect().height + 18;
+        const targetY = Math.max(0, target.getBoundingClientRect().top + window.scrollY - headerOffset);
+        window.scrollTo({
+          top: targetY,
+          behavior: reducedMotion ? 'auto' : 'smooth'
+        });
+        window.history.replaceState(null, '', hash);
+      });
+    });
+  });
   document.addEventListener('click', (event) => {
     if (!navPanel.classList.contains('open')) return;
     if (!navPanel.contains(event.target) && !menuButton.contains(event.target)) toggleMenu(false);
