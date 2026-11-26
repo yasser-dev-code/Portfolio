@@ -56,7 +56,7 @@ No installation or build command is required.
 
 The hero section links directly to the final PDF:
 
-- `CV/CV_Yasser_Oussahel_Final.pdf`
+- `CV/CV_Yasser_Oussahel.pdf`
 
 The standard HTML `download` link and relative path work locally and on GitHub Pages.
 
@@ -76,7 +76,7 @@ Portfolio/
 │       ├── yasser-oussahel.jpg
 │       └── projects/
 ├── CV/
-│   └── CV_Yasser_Oussahel_Final.pdf
+│   └── CV_Yasser_Oussahel.pdf
 ├── profile.jpg.png
 ├── README.md
 ├── README.fr.md

@@ -56,7 +56,7 @@ Aucune installation ni compilation n’est nécessaire.
 
 La section d’accueil pointe directement vers le PDF final :
 
-- `CV/CV_Yasser_Oussahel_Final.pdf`
+- `CV/CV_Yasser_Oussahel.pdf`
 
 Le lien utilise l’attribut HTML `download` et un chemin relatif compatible avec un usage local et GitHub Pages.
 
@@ -76,7 +76,7 @@ Portfolio/
 │       ├── yasser-oussahel.jpg
 │       └── projects/
 ├── CV/
-│   └── CV_Yasser_Oussahel_Final.pdf
+│   └── CV_Yasser_Oussahel.pdf
 ├── profile.jpg.png
 ├── README.md
 ├── README.fr.md
