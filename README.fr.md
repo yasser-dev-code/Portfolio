@@ -2,7 +2,7 @@
 
 [Read in English](README.md)
 
-Un portfolio développeur moderne et bilingue créé pour **Yasser Oussahel**, Développeur Full-Stack basé au Maroc. Ce site statique rapide présente ses projets vérifiés, ses compétences techniques, sa formation, ses liens de contact et ses CV téléchargeables.
+Un portfolio développeur moderne et bilingue créé pour **Yasser Oussahel**, Développeur Full-Stack basé au Maroc. Ce site statique rapide présente ses projets vérifiés, ses compétences techniques, sa formation, ses liens de contact et son CV téléchargeable.
 
 **Site en ligne :** <https://yasser-dev-code.github.io/Portfolio/>
 
@@ -14,7 +14,7 @@ Un portfolio développeur moderne et bilingue créé pour **Yasser Oussahel**, D
 - Navigation responsive, section active et menu mobile
 - Cinq projets GitHub publics vérifiés avec données locales fiables
 - Quatre captures réelles provenant des dépôts des projets
-- Téléchargement des CV originaux aux formats PDF et Word
+- Téléchargement du CV PDF final optimisé pour les ATS
 - Photographie professionnelle avec copie optimisée pour l’affichage
 - Structure sémantique accessible, navigation clavier et réduction des animations
 - Métadonnées SEO et Open Graph, favicon et mise à jour bilingue des métadonnées
@@ -52,14 +52,13 @@ Ouvrez ensuite <http://localhost:8000/>.
 
 Aucune installation ni compilation n’est nécessaire.
 
-## Téléchargement des CV
+## Téléchargement du CV
 
-La section d’accueil pointe directement vers les documents originaux :
+La section d’accueil pointe directement vers le PDF final :
 
-- `CV/CV.pdf`
-- `CV/CV.docx`
+- `CV/CV_Yasser_Oussahel_Final.pdf`
 
-Les deux liens utilisent l’attribut HTML `download` et des chemins relatifs compatibles avec un usage local et GitHub Pages.
+Le lien utilise l’attribut HTML `download` et un chemin relatif compatible avec un usage local et GitHub Pages.
 
 ## Structure du projet
 
@@ -77,8 +76,7 @@ Portfolio/
 │       ├── yasser-oussahel.jpg
 │       └── projects/
 ├── CV/
-│   ├── CV.pdf
-│   └── CV.docx
+│   └── CV_Yasser_Oussahel_Final.pdf
 ├── profile.jpg.png
 ├── README.md
 ├── README.fr.md

@@ -2,7 +2,7 @@
 
 [Lire en français](README.fr.md)
 
-A modern, bilingual developer portfolio created for **Yasser Oussahel**, a Full-Stack Developer based in Morocco. It presents verified projects, technical skills, education, contact links, and downloadable CV files in a fast static website.
+A modern, bilingual developer portfolio created for **Yasser Oussahel**, a Full-Stack Developer based in Morocco. It presents verified projects, technical skills, education, contact links, and a downloadable CV in a fast static website.
 
 **Live website:** <https://yasser-dev-code.github.io/Portfolio/>
 
@@ -14,7 +14,7 @@ A modern, bilingual developer portfolio created for **Yasser Oussahel**, a Full-
 - Responsive navigation with active-section highlighting and a mobile menu
 - Five verified public GitHub projects with local fallback data
 - Four real project screenshots sourced from their repositories
-- Download links for the original PDF and Word CV files
+- Download link for the final ATS-optimized PDF CV
 - Professional profile photograph with an optimized display copy
 - Accessible semantic structure, keyboard focus states, and reduced-motion support
 - SEO, Open Graph, favicon, and bilingual metadata updates
@@ -52,14 +52,13 @@ Then open <http://localhost:8000/>.
 
 No installation or build command is required.
 
-## CV downloads
+## CV download
 
-The hero section links directly to the original documents:
+The hero section links directly to the final PDF:
 
-- `CV/CV.pdf`
-- `CV/CV.docx`
+- `CV/CV_Yasser_Oussahel_Final.pdf`
 
-Both use standard HTML `download` links and relative paths that work locally and on GitHub Pages.
+The standard HTML `download` link and relative path work locally and on GitHub Pages.
 
 ## Project structure
 
@@ -77,8 +76,7 @@ Portfolio/
 │       ├── yasser-oussahel.jpg
 │       └── projects/
 ├── CV/
-│   ├── CV.pdf
-│   └── CV.docx
+│   └── CV_Yasser_Oussahel_Final.pdf
 ├── profile.jpg.png
 ├── README.md
 ├── README.fr.md
